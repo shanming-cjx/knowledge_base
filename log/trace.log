@@ -70,3 +70,4 @@
 2022-07-08 22:04:03.627 INFO  com.chenjx.knowledge_base.KnowledgeBaseApplication:61   [32m                  [0;39m Started KnowledgeBaseApplication in 1.487 seconds (JVM running for 2.149)
 2022-07-08 22:04:03.629 INFO  com.chenjx.knowledge_base.KnowledgeBaseApplication:18   [32m                  [0;39m Spring启动成功!！
 2022-07-08 22:04:03.630 INFO  com.chenjx.knowledge_base.KnowledgeBaseApplication:19   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2022-07-08 22:06:37.358 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
