@@ -672,3 +672,18 @@ Action:
 
 Consider defining a bean of type 'com.chenjx.knowledge_base.mapper.TestMapper' in your configuration.
 
+2022-07-12 16:01:41.141 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.chenjx.knowledge_base.service_impl.EbookServiceImpl' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.chenjx.knowledge_base.service_impl.EbookServiceImpl' in your configuration.
+

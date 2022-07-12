@@ -56,12 +56,13 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
-        <!-- mybatis-plus-->
+        <!-- mybatis-plus代码生成器-->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-generator</artifactId>
             <version>3.5.2</version>
         </dependency>
+        <!-- mybatis-plus代码生成器的freemarker模板-->
         <dependency>
             <groupId>org.freemarker</groupId>
             <artifactId>freemarker</artifactId>
