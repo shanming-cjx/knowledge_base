@@ -38,7 +38,7 @@ public class MybatisPlusGeneratorTest {
                     //.addTablePrefix("t_", "c_"); // 设置过滤表前缀
                 })
                 .templateConfig(builder -> {
-                    builder.entity("mybatis_template/entity.java");//自定义模板
+                    builder.entity("template/entity.java");//自定义模板
                 })
                 .templateEngine(new FreemarkerTemplateEngine()) // 使用Freemarker引擎模板，默认的是Velocity引擎模板
                 .execute();
