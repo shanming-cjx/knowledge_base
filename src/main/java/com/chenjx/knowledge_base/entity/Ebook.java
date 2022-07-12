@@ -1,60 +1,63 @@
 package com.chenjx.knowledge_base.entity;
 
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 import java.io.Serializable;
 
 /**
+ * <p>
  * 电子书
+ * </p>
+ *
  * @author chenjx
  * @since 2022-07-12
  */
 @Data
+@Accessors(chain = true)
 @TableName("ebook")
 public class Ebook implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     //id
+    @TableId("id")
     private Long id;
 
-    // 名称
+    //名称
+    @TableField("name")
     private String name;
 
-    // 分类1
+    //分类1
+    @TableField("category1_id")
     private Long category1Id;
 
-    // 分类2
+    //分类2
+    @TableField("category2_id")
     private Long category2Id;
 
     //描述
+    @TableField("description")
     private String description;
 
-    // 封面
+    //封面
+    @TableField("cover")
     private String cover;
 
-    // 文档数
+    //文档数
+    @TableField("doc_count")
     private Integer docCount;
 
-    // 阅读数
+    //阅读数
+    @TableField("view_count")
     private Integer viewCount;
 
     //点赞数
+    @TableField("vote_count")
     private Integer voteCount;
 
-    @Override
-    public String toString() {
-        return "Ebook{" +
-            "id=" + id +
-            ", name=" + name +
-            ", category1Id=" + category1Id +
-            ", category2Id=" + category2Id +
-            ", description=" + description +
-            ", cover=" + cover +
-            ", docCount=" + docCount +
-            ", viewCount=" + viewCount +
-            ", voteCount=" + voteCount +
-        "}";
-    }
+
 }
