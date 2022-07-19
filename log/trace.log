@@ -863,3 +863,43 @@ java.net.ConnectException: Connection refused: connect
 2022-07-19 15:08:59.721 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
 2022-07-19 15:08:59.722 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
 2022-07-19 15:08:59.732 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2022-07-19 15:18:03.166 INFO  c.c.knowledge_base.config.KnowledgeBaseApplication:55   [32m                  [0;39m Starting KnowledgeBaseApplication using Java 1.8.0_291 on DESKTOP-400MTLR with PID 6960 (D:\JavaWorkspace\knowledge_base\target\classes started by 善明 in D:\JavaWorkspace\knowledge_base)
+2022-07-19 15:18:03.169 INFO  c.c.knowledge_base.config.KnowledgeBaseApplication:660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2022-07-19 15:18:03.239 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-19 15:18:03.240 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-19 15:18:04.125 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2022-07-19 15:18:04.133 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2022-07-19 15:18:04.133 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-07-19 15:18:04.133 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-07-19 15:18:04.210 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-07-19 15:18:04.210 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 969 ms
+2022-07-19 15:18:05.002 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-19 15:18:05.263 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-07-19 15:18:05.285 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
+2022-07-19 15:18:05.304 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
+2022-07-19 15:18:05.322 INFO  c.c.knowledge_base.config.KnowledgeBaseApplication:61   [32m                  [0;39m Started KnowledgeBaseApplication in 2.667 seconds (JVM running for 4.728)
+2022-07-19 15:18:05.326 INFO  c.c.knowledge_base.config.KnowledgeBaseApplication:22   [32m                  [0;39m Spring启动成功!！
+2022-07-19 15:18:05.327 INFO  c.c.knowledge_base.config.KnowledgeBaseApplication:23   [32m                  [0;39m 地址: 	http://127.0.0.1:8088
+2022-07-19 15:18:05.805 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-19 15:18:10.202 INFO  c.c.knowledge_base.config.KnowledgeBaseApplication:55   [32m                  [0;39m Starting KnowledgeBaseApplication using Java 1.8.0_291 on DESKTOP-400MTLR with PID 4652 (D:\JavaWorkspace\knowledge_base\target\classes started by 善明 in D:\JavaWorkspace\knowledge_base)
+2022-07-19 15:18:10.206 INFO  c.c.knowledge_base.config.KnowledgeBaseApplication:660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2022-07-19 15:18:10.255 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-19 15:18:10.255 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-19 15:18:11.143 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2022-07-19 15:18:11.149 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2022-07-19 15:18:11.150 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-07-19 15:18:11.150 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-07-19 15:18:11.217 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-07-19 15:18:11.217 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 961 ms
+2022-07-19 15:18:12.001 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-19 15:18:12.144 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-07-19 15:18:12.156 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
+2022-07-19 15:18:12.170 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
+2022-07-19 15:18:12.179 INFO  c.c.knowledge_base.config.KnowledgeBaseApplication:61   [32m                  [0;39m Started KnowledgeBaseApplication in 2.396 seconds (JVM running for 3.301)
+2022-07-19 15:18:12.181 INFO  c.c.knowledge_base.config.KnowledgeBaseApplication:22   [32m                  [0;39m Spring启动成功!！
+2022-07-19 15:18:12.182 INFO  c.c.knowledge_base.config.KnowledgeBaseApplication:23   [32m                  [0;39m 地址: 	http://127.0.0.1:8088
+2022-07-19 15:18:40.801 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-19 15:18:40.802 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-07-19 15:18:40.802 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-07-19 15:18:40.857 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2022-07-19 15:18:40.962 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
