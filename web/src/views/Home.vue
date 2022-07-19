@@ -77,15 +77,13 @@ export default defineComponent({
   name: 'Home',
   components: {},
   setup() {
-    console.log("Setup");
     const ebook = ref();
 
     onMounted(() => {
-      console.log("onMounted")
       axios.get( "/ebook/list").then((response) => {
         const data = response.data;
         ebook.value = data.content;
-        console.log("axios")
+        // console.log(response)//改为axios拦截器的日志
       });
     })
     return {
