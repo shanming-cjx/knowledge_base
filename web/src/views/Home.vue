@@ -8,15 +8,16 @@
           :openKeys="openKeys"
       >
         <a-menu-item key="welcome">
-          <MailOutlined />
+          <MailOutlined/>
           <span>欢迎</span>
         </a-menu-item>
         <a-sub-menu v-for="item in level1" :key="item.id" :disabled="true">
           <template v-slot:title>
-            <span><user-outlined />{{item.name}}</span>
+            <span><user-outlined/>{{ item.name }}</span>
           </template>
           <a-menu-item v-for="child in item.children" :key="child.id">
-            <MailOutlined /><span>{{child.name}}</span>
+            <MailOutlined/>
+            <span>{{ child.name }}</span>
           </a-menu-item>
         </a-sub-menu>
         <a-menu-item key="tip" :disabled="true">
@@ -30,20 +31,21 @@
       <div class="welcome" v-show="isShowWelcome">
         <the-welcome></the-welcome>
       </div>
-      <a-list v-show="!isShowWelcome" item-layout="vertical" size="large" :grid="{ gutter: 20, column: 3 }" :data-source="ebooks">
+      <a-list v-show="!isShowWelcome" item-layout="vertical" size="large" :grid="{ gutter: 20, column: 3 }"
+              :data-source="ebooks">
         <template #renderItem="{ item }">
           <a-list-item key="item.name">
             <template #actions>
               <span>
-                <component v-bind:is="'FileOutlined'" style="margin-right: 8px" />
+                <component v-bind:is="'FileOutlined'" style="margin-right: 8px"/>
                 {{ item.docCount }}
               </span>
               <span>
-                <component v-bind:is="'UserOutlined'" style="margin-right: 8px" />
+                <component v-bind:is="'UserOutlined'" style="margin-right: 8px"/>
                 {{ item.viewCount }}
               </span>
               <span>
-                <component v-bind:is="'LikeOutlined'" style="margin-right: 8px" />
+                <component v-bind:is="'LikeOutlined'" style="margin-right: 8px"/>
                 {{ item.voteCount }}
               </span>
             </template>
@@ -53,39 +55,40 @@
                   {{ item.name }}
                 </router-link>
               </template>
-              <template #avatar><a-avatar :src="item.cover"/></template>
+              <template #avatar>
+                <a-avatar :src="item.cover"/>
+              </template>
             </a-list-item-meta>
           </a-list-item>
         </template>
       </a-list>
     </a-layout-content>
     <pre>
-{{ebook}}
+{{ ebook }}
     </pre>
   </a-layout>
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, ref } from 'vue';
+import {defineComponent, onMounted, ref} from 'vue';
 import axios from 'axios';
 
 export default defineComponent({
   name: 'Home',
-  components: {
-  },
-  setup(){
+  components: {},
+  setup() {
     console.log("Setup");
     const ebook = ref();
 
-    onMounted(()=>{
+    onMounted(() => {
       console.log("onMounted")
-      axios.get("http://127.0.0.1:8088/ebook/list").then((response)=>{
+      axios.get(process.env.VUE_APP_SERVER + "/ebook/list").then((response) => {
         const data = response.data;
         ebook.value = data.content;
         console.log("axios")
       });
     })
-    return{
+    return {
       ebook,
     }
   }

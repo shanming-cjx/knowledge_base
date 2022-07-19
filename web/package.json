@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve_dev": "vue-cli-service serve --mode dev --port 8080",
+    "serve_prod": "vue-cli-service serve --mode prod --port 8080",
+    "build_dev": "vue-cli-service build --mode dev",
+    "build_prod": "vue-cli-service build --mode prod",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
